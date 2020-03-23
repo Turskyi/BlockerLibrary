@@ -1,9 +1,22 @@
 [![](https://jitpack.io/v/Turskyi/BlockerLibrary.svg)](https://jitpack.io/#Turskyi/BlockerLibrary)
 
 Instruction for the blocker at the moment:
-1. You add this dependency to Gradle 
-implementation 'com.github.Turskyi:BlockerLibrary:0.1.0',
-2. in onСreate in MainActvity, add this line of code
+1. Add it in your root build.gradle at the end of repositories:
+
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+2. Add the dependency:
+
+dependencies {
+		implementation 'com.github.User:Repo:Tag'
+	}
+
+3. in onСreate in MainActvity,  add this line of code
 
 checkIfAppIsBlocked (this, BLOCK_NAME, PROFILE_ID)
 
