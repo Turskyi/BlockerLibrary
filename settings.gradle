@@ -1,0 +1,3 @@
+rootProject.name='BlockerLibrary'
+include ':app'
+include ':blockerlibrary'
