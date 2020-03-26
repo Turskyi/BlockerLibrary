@@ -13,7 +13,7 @@ allprojects {
 2. Add the dependency:
 
 dependencies {
-		implementation 'com.github.User:Repo:Tag'
+		implementation 'com.github.User:Repo:0.1.0'
 	}
 
 3. in onСreate in MainActvity,  add this line of code
