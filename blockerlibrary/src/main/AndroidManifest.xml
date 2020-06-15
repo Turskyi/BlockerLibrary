@@ -1,2 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ua.turskyi.blockerlibrary" />
+<manifest package="ua.turskyi.blockerlibrary" />
