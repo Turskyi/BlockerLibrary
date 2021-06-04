@@ -24,8 +24,10 @@ allprojects {
 
 ```
 dependencies {
-		implementation 'com.github.Turskyi:BlockerLibrary:0.1.0'
-	}
+
+    implementation "com.github.Turskyi:BlockerLibrary:$blocker_version"
+
+}
 ```
 
 ### 3. In "onCreate(savedInstanceState: Bundle?)" of MainActvity,  add this line of code
