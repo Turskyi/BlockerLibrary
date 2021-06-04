@@ -49,7 +49,7 @@ import ua.turskyi.blocker.Blocker.checkIfAppIsBlocked
 
 To unlock a project, just make the project private.
 
-### 4. Additionally, it is possible to create a [Worker](https://developer.android.com/reference/androidx/work/Worker#:~:text=androidx.work.ListenableWorker-,%E2%86%B3,getExecutor()%20).) and add
+### 4. Additionally, it is possible to create a [Worker](https://developer.android.com/reference/androidx/work/Worker#:~:text=androidx.work.ListenableWorker-,%E2%86%B3,getExecutor()%20) and add
 
 ```
 checkIfAppIsBlocked (AppCompatActivity(), BLOCK_NAME, PROFILE_ID)
@@ -75,8 +75,8 @@ if (appIsBlocked(this)) {
 
 • Programming language: **Kotlin**;
 
-• HTTP client: [Retrofit](https://square.github.io/retrofit/)
+• HTTP client: [Retrofit](https://square.github.io/retrofit/);
 
-• Data storage: [SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences)
+• Data storage: [SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences);
 
-• Package repository: [JitPack](https://jitpack.io/)
+• Package repository: [JitPack](https://jitpack.io/).
