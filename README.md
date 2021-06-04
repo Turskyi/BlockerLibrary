@@ -44,6 +44,8 @@ import ua.turskyi.blocker.Blocker.checkIfAppIsBlocked
 
 , where **BLOCK_NAME** and **PROFILE_ID** is the name of the project (BLOCK_NAME) that will need to be created in the profile (PROFILE_ID) on [GitLab.com](https://gitlab.com/).
 
+ *for example here* https://gitlab.com/Turskyi - "Turskyi" is my PROFILE_ID
+
   If the project is public, then the application will simply not allow opening.
   In general, that is enough because the application will be useless.
 
