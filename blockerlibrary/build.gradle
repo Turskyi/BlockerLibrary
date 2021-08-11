@@ -4,6 +4,8 @@ plugins {
     id 'maven-publish'
 }
 
+group = 'com.github.Turskyi'
+
 android {
     compileSdkVersion rootProject.compile_sdk_version
     buildToolsVersion rootProject.build_tools_version
@@ -48,4 +50,18 @@ dependencies {
     testImplementation "junit:junit:$junit_version"
     androidTestImplementation "androidx.test.ext:junit:$ext_junit_version"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.Turskyi'
+                artifactId = 'BlockerLibrary'
+                version = rootProject.blocker_version
+            }
+        }
+    }
 }
