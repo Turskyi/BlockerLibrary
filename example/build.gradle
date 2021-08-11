@@ -6,7 +6,7 @@ android {
     buildToolsVersion rootProject.build_tools_version
 
     defaultConfig {
-        applicationId "ua.turskyi.blockerlibrary.example"
+        applicationId "ua.turskyi.blockerlibrary"
         minSdkVersion rootProject.min_sdk_version
         targetSdkVersion rootProject.target_sdk_version
         versionCode 1
