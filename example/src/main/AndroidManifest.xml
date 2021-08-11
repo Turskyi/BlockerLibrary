@@ -11,8 +11,10 @@
         android:label="Blocker library"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
+        <!-- android:exported should be set true for main activity, or it won't launch -->
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:label="Blocker library">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
