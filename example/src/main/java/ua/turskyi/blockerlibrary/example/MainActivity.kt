@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import ua.turskyi.blocker.Blocker.appIsBlocked
 import ua.turskyi.blocker.Blocker.checkIfAppIsBlocked
-import ua.turskyi.blockerlibrary.R
 
 class MainActivity : AppCompatActivity(R.layout.activity_main){
     override fun onCreate(savedInstanceState: Bundle?) {
