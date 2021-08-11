@@ -1,4 +1,4 @@
-package ua.turskyi.blockerlibrary
+package ua.turskyi.blockerlibrary.example
 
 import android.os.Bundle
 import android.widget.TextView
