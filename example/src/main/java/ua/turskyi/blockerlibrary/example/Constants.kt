@@ -1,4 +1,4 @@
-package ua.turskyi.blockerlibrary
+package ua.turskyi.blockerlibrary.example
 
 object Constants {
     const val BLOCK_NAME = "block-name"
