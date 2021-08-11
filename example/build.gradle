@@ -35,9 +35,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "androidx.appcompat:appcompat:$appcompat_version"
 
-    implementation project(":blockerlibrary")
-    //NOTE: remove line above and uncomment line bellow in real project
-//    implementation "com.github.Turskyi:BlockerLibrary:$blocker_version"
+    implementation "com.github.Turskyi:BlockerLibrary:$blocker_version"
 
     testImplementation "junit:junit:$junit_version"
     androidTestImplementation "androidx.test.ext:junit:$ext_junit_version"
