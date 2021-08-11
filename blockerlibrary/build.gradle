@@ -11,7 +11,7 @@ android {
     defaultConfig {
         minSdkVersion rootProject.min_sdk_version
         targetSdkVersion rootProject.target_sdk_version
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
     }
@@ -43,7 +43,7 @@ dependencies {
     // Shared Preferences
     implementation "androidx.preference:preference-ktx:$shared_preferences_version"
 
-
+    implementation "androidx.multidex:multidex:$multidex_version"
 
     testImplementation "junit:junit:$junit_version"
     androidTestImplementation "androidx.test.ext:junit:$ext_junit_version"
