@@ -81,6 +81,8 @@ if (appIsBlocked(this)) {
 
 • Programming language: [Kotlin](https://kotlinlang.org/);
 
+• Interface: [XML](https://developer.android.com/guide/topics/ui/declaring-layout);
+
 • SDK: [Android](https://developer.android.com/studio/intro);
 
 • HTTP client: [Retrofit](https://square.github.io/retrofit/);
@@ -89,6 +91,8 @@ if (appIsBlocked(this)) {
 
 • Functionality: App has an example project which simply shows a text message indicating if the app is not blocked,
 since if it would be blocked, it would not be running and closed immediately.  
-Every new update of the project, I navigate to the **"Releases"** section on the right of this Github repository page and create a new release, incrementing version.
-Then I open the [jitpack.io](https://jitpack.io/#Turskyi/BlockerLibrary) repository page and click "Get it" button in front of new release version,
+Every new update of the project,
+I navigate to the **"Releases"** section on the right of this Github repository page and create a new release,
+incrementing version,
+then I open the [jitpack.io](https://jitpack.io/#Turskyi/BlockerLibrary) repository page and click "Get it" button in front of new release version,
 to check if it does not have errors.
