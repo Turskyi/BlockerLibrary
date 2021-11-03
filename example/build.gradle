@@ -9,7 +9,7 @@ android {
         applicationId "ua.turskyi.blockerlibrary"
         minSdkVersion rootProject.min_sdk_version
         targetSdkVersion rootProject.target_sdk_version
-        versionCode 2
+        versionCode rootProject.version_code
         versionName rootProject.blocker_version
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
