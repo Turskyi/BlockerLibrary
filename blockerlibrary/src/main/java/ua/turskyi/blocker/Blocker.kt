@@ -14,7 +14,8 @@ import ua.turskyi.blocker.Constants.SHARED_PREFS_BLOCKED
 
 object Blocker {
     fun appIsBlocked(context: Context): Boolean {
-        val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
+        val sharedPreferences: SharedPreferences =
+            PreferenceManager.getDefaultSharedPreferences(context)
         return sharedPreferences.getBoolean(SHARED_PREFS_BLOCKED, false)
     }
 
@@ -28,7 +29,7 @@ object Blocker {
             override fun onResponse(
                 call: Call<List<GitLabRepo>>, response: Response<List<GitLabRepo>>
             ) {
-                response.body()?.let { projectList ->
+                response.body()?.let { projectList: List<GitLabRepo> ->
                     projectList.forEach {
                         if (it.name.equals(projectName)) {
                             true.saveAnswerIfBlocked(activity)
