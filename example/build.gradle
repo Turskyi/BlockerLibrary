@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'maven-publish'
 
 android {
     //noinspection GroovyAssignabilityCheck
@@ -47,6 +48,9 @@ dependencies {
 //    implementation "com.github.Turskyi:BlockerLibrary:$blocker_version"
 
     implementation "androidx.multidex:multidex:$multidex_version"
+
+    def lifecycle_version = "2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 
     testImplementation "junit:junit:$junit_version"
     androidTestImplementation "androidx.test.ext:junit:$ext_junit_version"
