@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ua.turskyi.blockerlibrary.example">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,7 +10,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Blocker library"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light">
+        android:theme="@style/Theme.AppCompat.Light"
+        tools:ignore="DataExtractionRules">
         <!-- android:exported should be set true for main activity, or it won't launch -->
         <activity
             android:name="ua.turskyi.blockerlibrary.example.MainActivity"

@@ -2,9 +2,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
+    //noinspection GroovyAssignabilityCheck
+    //noinspection GrDeprecatedAPIUsage
     compileSdkVersion rootProject.compile_sdk_version
+    //noinspection GroovyAssignabilityCheck
     buildToolsVersion rootProject.build_tools_version
 
+    //noinspection GroovyAssignabilityCheck
     defaultConfig {
         applicationId "ua.turskyi.blockerlibrary"
         minSdkVersion rootProject.min_sdk_version
@@ -15,6 +19,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    //noinspection GroovyAssignabilityCheck
     buildTypes {
         release {
             minifyEnabled false
@@ -22,6 +27,7 @@ android {
                     'proguard-rules.pro'
         }
     }
+    //noinspection GroovyAssignabilityCheck
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
@@ -29,6 +35,7 @@ android {
     kotlinOptions {
         jvmTarget = '11'
     }
+    namespace 'ua.turskyi.blockerlibrary.example'
 }
 
 dependencies {

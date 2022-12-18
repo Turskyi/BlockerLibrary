@@ -43,12 +43,13 @@ and import
 import ua.turskyi.blocker.Blocker.checkIfAppIsBlocked
 ```
 
-, where **BLOCK_NAME** and **PROFILE_ID** is the name of the project (BLOCK_NAME) that will need to be created in the profile (PROFILE_ID) on [GitLab.com](https://gitlab.com/).
+where **BLOCK_NAME** and **PROFILE_ID** is the name of the project (BLOCK_NAME) that will need to be
+created in the profile (PROFILE_ID) on [GitLab.com](https://gitlab.com/).
 
- *for example here* https://gitlab.com/Turskyi - "Turskyi" is my PROFILE_ID
+*for example here* https://gitlab.com/Turskyi - "Turskyi" is my PROFILE_ID
 
-  If the project is public, then the application will simply not allow opening.
-  In general, that is enough because the application will be useless.
+If the project is public, then the application will simply not allow opening. In general, that is
+enough because the application will be useless.
 
 To unlock a project, just make the project private.
 
@@ -87,12 +88,13 @@ if (appIsBlocked(this)) {
 
 • HTTP client: [Retrofit](https://square.github.io/retrofit/);
 
-• Data storage: [SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences);
+• Data
+storage: [SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences)
+;
 
-• Functionality: App has an example project which simply shows a text message indicating if the app is not blocked,
-since if it would be blocked, it would not be running and closed immediately.  
-Every new update of the project,
-I navigate to the **"Releases"** section on the right of this Github repository page and create a new release,
-incrementing version,
-then I open the [jitpack.io](https://jitpack.io/#Turskyi/BlockerLibrary) repository page and click "Get it" button in front of new release version,
-to check if it does not have errors.
+• Functionality: App has an example project which simply shows a text message indicating if the app
+is not blocked, since if it would be blocked, it would not be running and closed immediately.  
+Every new update of the project, I navigate to the **"Releases"** section on the right of this
+GitHub repository page and create a new release, incrementing version, then I open
+the [jitpack.io](https://jitpack.io/#Turskyi/BlockerLibrary) repository page and click "Get it"
+button in front of new release version, to check if it does not have errors.
