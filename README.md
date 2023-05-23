@@ -31,7 +31,7 @@ dependencies {
 }
 ```
 
-### 3. In "onCreate(savedInstanceState: Bundle?)" of MainActivity,  add this line of code
+### 3. In "onCreate(savedInstanceState: Bundle?)" of MainActivity, add this line of code
 
 ```
 checkIfAppIsBlocked (this, BLOCK_NAME, PROFILE_ID)
@@ -59,7 +59,7 @@ To unlock a project, just make the project private.
 checkIfAppIsBlocked (AppCompatActivity(), BLOCK_NAME, PROFILE_ID)
 ```
 
-and for example 
+and for example
 
 ```
 if (appIsBlocked(applicationContext)) {
@@ -76,6 +76,7 @@ if (appIsBlocked(this)) {
 ```
 
 ## PROJECT SPECIFICATION
+
 • Package repository: [JitPack](https://jitpack.io/#Turskyi/BlockerLibrary);
 
 • Operating system: [Android](https://www.android.com/);
@@ -95,9 +96,9 @@ storage: [SharedPreferences](https://developer.android.com/training/data-storage
 • Functionality: App has an example project which simply shows a text message indicating if the app
 is not blocked, since if it would be blocked, it would not be running and closed immediately.  
 Every new update of the project, I navigate to the **"Releases"** section on the right of this
-GitHub repository page and create a new release, incrementing version, then I open
-the [jitpack.io](https://jitpack.io/#Turskyi/BlockerLibrary) repository page and click "Get it"
-button in front of new release version, to check if it does not have errors.
+GitHub repository page and create a new release, incrementing version. The tag name must follow the
+format X.X.X. Then I open the [jitpack.io](https://jitpack.io/#Turskyi/BlockerLibrary) repository
+page and click "Get it" button in front of new release version, to check if it does not have errors.
 
 • **Code Readability:** code is easily readable such that a fellow programmer can understand the
 purpose of the app, all variables, methods, and resource IDs are descriptively named such that
