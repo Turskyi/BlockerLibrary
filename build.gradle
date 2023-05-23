@@ -50,9 +50,9 @@ tasks.register('clean') {
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = 'Turskyi'
+            groupId = 'com.github.Turskyi'
             artifactId = 'blockerlibrary'
-            version = "1.2.1"
+            version = rootProject.blocker_version
 
             pom {
                 description = 'Distance blocker for mobile apps'
