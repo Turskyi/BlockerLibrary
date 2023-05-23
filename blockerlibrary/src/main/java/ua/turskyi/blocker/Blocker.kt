@@ -39,6 +39,7 @@ object Blocker {
                 }
             }
 
+            @Suppress("EmptyMethod")
             override fun onFailure(call: Call<List<GitLabRepo>>, t: Throwable) {
                 // the network call was a failure
             }

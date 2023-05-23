@@ -49,8 +49,12 @@ dependencies {
 
     implementation "androidx.multidex:multidex:$multidex_version"
 
-    def lifecycle_version = "2.5.1"
+    def lifecycle_version = "2.6.1"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    // added to avoid errors with libraries, which using kotlin
+    //noinspection DifferentStdlibGradleVersion
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
     testImplementation "junit:junit:$junit_version"
     androidTestImplementation "androidx.test.ext:junit:$ext_junit_version"

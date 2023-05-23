@@ -3,30 +3,30 @@ apply plugin: 'maven-publish'
 
 buildscript {
     ext {
+        // versions
+        version_code = 8
+        blocker_version = "1.2.2"
         // sdk versions
         compile_sdk_version = 33
         build_tools_version = "30.0.3"
         min_sdk_version = 21
         target_sdk_version = 33
         // global dependency versions
-        kotlin_version = '1.7.20'
-        appcompat_version = "1.5.1"
+        appcompat_version = "1.6.1"
+        ext_junit_version = "1.1.5"
+        espresso_version = "3.5.1"
+        junit_version = "4.13.2"
+        kotlin_version = '1.8.21'
+        multidex_version = "2.0.1"
         retrofit_version = '2.9.0'
         shared_preferences_version = "1.2.0"
-        junit_version = "4.13.2"
-        ext_junit_version = "1.1.4"
-        espresso_version = "3.5.0"
-        multidex_version = "2.0.1"
-
-        version_code = 7
-        blocker_version = "1.2.1"
     }
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.1'
+        classpath 'com.android.tools.build:gradle:8.0.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 //        adding the android-maven plugin
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'

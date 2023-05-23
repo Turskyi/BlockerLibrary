@@ -1,8 +1,8 @@
 # Blocker Library [![](https://jitpack.io/v/Turskyi/BlockerLibrary.svg)](https://jitpack.io/#Turskyi/BlockerLibrary)
 
-Distance blocker for mobile apps.  
+Distance blocker for mobile apps.
 
-Why?  
+**Why?**
 
 In case if developer does not trust the customer.
 
@@ -21,7 +21,7 @@ allprojects {
 	}
 ```
 
-### 2. Add "com.github.Turskyi:BlockerLibrary:$blocker_version" to the app dependencies:
+### 2. Add "com.github.Turskyi:BlockerLibrary:$[blocker_version](https://jitpack.io/#Turskyi/BlockerLibrary)" to the app dependencies:
 
 ```
 dependencies {
@@ -98,3 +98,8 @@ Every new update of the project, I navigate to the **"Releases"** section on the
 GitHub repository page and create a new release, incrementing version, then I open
 the [jitpack.io](https://jitpack.io/#Turskyi/BlockerLibrary) repository page and click "Get it"
 button in front of new release version, to check if it does not have errors.
+
+• **Code Readability:** code is easily readable such that a fellow programmer can understand the
+purpose of the app, all variables, methods, and resource IDs are descriptively named such that
+another developer reading the code can easily understand their function, no unnecessary blank lines,
+no unused variables or methods, no commented out code.
