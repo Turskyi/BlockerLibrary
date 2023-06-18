@@ -1,8 +1,10 @@
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct-single.svg)](https://stand-with-ukraine.pp.ua)
+
 # Blocker Library [![](https://jitpack.io/v/Turskyi/BlockerLibrary.svg)](https://jitpack.io/#Turskyi/BlockerLibrary)
 
 Distance blocker for mobile apps.
 
-**Why?**
+# Why?
 
 In case if developer does not trust the customer.
 
@@ -14,20 +16,17 @@ Created under impression from [The Hummingbird Project](https://youtu.be/3-IlhKb
 
 ```
 allprojects {
-		repositories {
-
-			maven { url 'https://jitpack.io' }
-		}
+    repositories {
+	   maven { url 'https://jitpack.io' }
 	}
+}
 ```
 
 ### 2. Add "com.github.Turskyi:BlockerLibrary:$[blocker_version](https://jitpack.io/#Turskyi/BlockerLibrary)" to the app dependencies:
 
 ```
 dependencies {
-
     implementation "com.github.Turskyi:BlockerLibrary:$blocker_version"
-
 }
 ```
 
@@ -77,23 +76,25 @@ if (appIsBlocked(this)) {
 
 ## PROJECT SPECIFICATION
 
+• Programming language: [Kotlin](https://kotlinlang.org/);
+
+• SDK: [Android](https://developer.android.com/studio/intro);
+
+• Interface: [XML](https://developer.android.com/guide/topics/ui/declaring-layout);
+
+• HTTP client: [Retrofit](https://square.github.io/retrofit/);
+
+• Data storage:
+[SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences);
+
 • Package repository: [JitPack](https://jitpack.io/#Turskyi/BlockerLibrary);
 
 • Operating system: [Android](https://www.android.com/);
 
-• Programming language: [Kotlin](https://kotlinlang.org/);
+• Architectural pattern: [Monolithic](https://microservices.io/patterns/monolithic.html);
 
-• Interface: [XML](https://developer.android.com/guide/topics/ui/declaring-layout);
-
-• SDK: [Android](https://developer.android.com/studio/intro);
-
-• HTTP client: [Retrofit](https://square.github.io/retrofit/);
-
-• Data
-storage: [SharedPreferences](https://developer.android.com/training/data-storage/shared-preferences)
-;
-
-• Functionality: App has an example project which simply shows a text message indicating if the app
+• **Functionality**: App has an example project which simply shows a text message indicating if the
+app
 is not blocked, since if it would be blocked, it would not be running and closed immediately.  
 Every new update of the project, I navigate to the **"Releases"** section on the right of this
 GitHub repository page and create a new release, incrementing version. The tag name must follow the
